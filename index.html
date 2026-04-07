@@ -11,13 +11,52 @@
     <p id="description">Descriptive paragraph</p>
     </header>
     <form id="survey-form">
-      <div class="personal-details">
+      <div class="form-group">
       <label id="name-label" for="name">Full Name:</label>
       <input required type="text" id="name" name="name" placeholder="Enter full name here"><br>
       <label id="email-label" for="email">Email:</label>
       <input required type="email" id="email" name="email" placeholder="Enter e-mail address"><br>
       <label id="number-label" for="number">Age (optional)</label>
-      <input type="number" id="number" name="age" placeholder="Enter your age"></div>
-    </form>  
-  </body>
+      <input min="18" max="99" type="number" id="number" name="age" placeholder="Age"></div><br>
+      <div class="form-group">
+        <p><label for="dropdown">Question here</label></p>
+          <select required id="dropdown" name="role">
+            <option value="" disabled selected>Select Option</option>
+            <option value="option-1">Option 1</option>
+            <option value="option-2">Option 2</option>
+            <option value="option-3">Option 3</option>
+            <option value="option-4">Option 4</option>
+            <option value="option-5">Option 5</option>
+            </select>
+            </div><br>
+          <div class="form-group">
+            <p><label>Question here</label></p>
+            <input required value="definitely" checked type="radio" id="radio1" name="recommendation"><label for="radio1">Definitely</label>
+            <input type="radio" value="maybe" id="radio2" name="recommendation"><label for="radio2">Maybe</label>
+            <input type="radio" value="no" id="radio3" name="recommendation"><label for="radio3">No</label>
+          </div><br>
+          <div class="form-group">
+          <p><label for="dropdown2">Question here</label></p>
+    <select required id="dropdown2" name="feature">
+      <option value="" disabled selected>Select Option</option>
+      <option value="option-1">Option 1</option>
+      <option value="option-2">Option 2</option>
+      <option value="option-3">Option 3</option>
+      <option value="option-4">Option 4</option>
+    </select>
+    </div><br>
+    <div class="form-group">
+      <p><label>Question here</label></p>
+      <input required checked type="checkbox" value="1" name="check" id="check-1"><label for="check-1">1</label>
+      <input type="checkbox" value="2" name="check" id="check-2"><label for="check-2">2</label>
+      <input type="checkbox" value="3" name="check" id="check-3"><label for="check-3">3</label>
+      <input type="checkbox" value="4" name="check" id="check-4"><label for="check-4">4</label>
+      <input type="checkbox" value="5" name="check" id="check-5"><label for="check-5">5</label>
+      <input type="checkbox" value="4" name="check" id="check-6"><label for="check-6">6</label></div><br>
+      <div class="form-group">
+        <p><label for ="text">Commments and Suggestions</label></p>
+        <textarea rows="6" cols="25" id="text" value="comments" name="comments" placeholder="Enter comments here.."></textarea><br>
+        <input type="submit" id="submit" value="submit" name="submit"></div>
+          </form>
+    </body>
 </html>
